@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registration-online voting</title>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  
+    <script>
+function validateform()
+{
+var password=document.forms["myform"]["password"].value;  
+var cpassword=document.forms["myform"]["cpassword"].value;
+var mobile=document.forms["myform"]["mobile"].value;
+var aadhar=document.forms["myform"]["aadhar"].value; 
+var name=document.forms["myform"]["name"].value;
+var address=document.forms["myform"]["address"].value;
+
+      
+       if (password!=cpassword)
+        {  
+         alert("passwords are not matching");  
+         return false;  
+        }
+
+
+       if(password.length<6)
+        {  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+        }
+        
+      
+        
+        if(mobile.length<13) 
+        {  
+        alert("invalid mobile number");  
+        return false;  
+        }  
+    
+
+
+        if(aadhar.length!=12)
+        {  
+        alert("please enter valid aadhar number");  
+        return false;  
+        }  
+   
+
+
+        if(name.length<1)
+        {  
+        alert("please enter full name");  
+        return false;  
+        }  
+
+
+
+        if(address.length<6)
+        {
+        alert("please enter full address");  
+        return false; 
+        }
+
+
+      
+      
+   }
+  </script>
+</head>
+<body>
+  <h1> Online Voting System</h1>
+  <br>
+  
+  <h3> Registration</h3>
+  <form name="myform" onsubmit="return validateform()" action="api/register.php" method="POST" enctype="multipart/form-data"> 
+  	<input type="text" name="name" placeholder="Enter name" required><br><br>
+  	<input type="number" name="mobile" placeholder="Enter Mobile" required><br><br>
+    <input type="number" name="aadhar" placeholder="Enter aadhar no" required><br><br>
+  	<input type="password" name="password" placeholder="Enter Password" required><br><br>
+  	<input type="password" name="cpassword" placeholder="confirm password" required><br><br>
+  	<input type="text" name="address" placeholder="Address" required><br><br>
+    
+    <div id="star">
+     <span style="color:darkred"> Please Upload image here:</span><input type="file" name="photo" required=""><br><br>
+    <Select name="role" required>
+      <option value="1">Voter</option>
+      <option value="2">Group</option>
+    </Select><br><br>
+  </div>
+
+
+  	<input  type="submit" style="color:darkred; background-color: orange;"><br><br>
+    
+    
+    
+    <hr>
+    
+  	Already user?<a href="index.html" style="color:darkred;">Login here</a>
+  </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+   text-align: center;
+   
+   background-image: url(elect.jpg);
+   
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: 100% 100%;
+    
+   background-color: floralwhite ;
+}
+
+#headersection
+{
+	padding: 10px;
+	
+}
+#headersection h1
+{
+	font-family: cursive;
+}
+input
+{
+	padding: 10px;
+	border-radius: 5px;
+}
+#dropbox
+{
+    padding: 10px;
+	border-radius: 5px;	
+	width: 12%;
+}
+#loginbtn
+{
+    padding: 10px;
+	border-radius: 5px;	
+	width: 5%;	
+	background-color: darkorange;
+}
+#star
+{
+	text-align: center;
+}

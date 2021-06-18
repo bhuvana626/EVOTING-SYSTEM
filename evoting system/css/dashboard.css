@@ -1,0 +1,70 @@
+body{
+   
+   
+    
+   background-color: #F7BE81;
+}
+h1
+{
+   font-family: cursive;
+}
+#back
+{
+padding:5px;
+font-size:15px;
+background-color:#50C7BD;
+color:white;
+border-radius:5px;
+float: left;
+margin: 10px;
+}
+
+#logout
+{
+padding:5px;
+font-size:15px;
+background-color:#50C7BD;
+color:white;
+border-radius:5px;
+float: right;
+margin: 10px;
+}
+#profile
+{
+   background-color: white;
+   width: 20%;
+   padding: 10px;
+   float: left;
+}
+#Group
+{
+   background-color: white;
+   width: 60%;
+   height: 60%;
+   padding: 10px;
+   float: right;
+}
+#votebtn
+{
+   padding:5px;
+font-size:15px;
+background-color:#50C7BD;
+color:white;
+border-radius:5px;
+float: left;
+}
+
+#mainpanel
+{
+   padding: 10px;
+}
+#voted
+{
+
+   padding:5px;
+font-size:15px;
+background-color:green;
+color:white;
+border-radius:5px;
+float: left;
+}
